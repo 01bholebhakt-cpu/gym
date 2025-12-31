@@ -1,0 +1,36 @@
+/* MOBILE OPTIMIZATION */
+
+@media (max-width: 1024px) {
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-section h1 {
+        font-size: 3.5rem !important;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+    }
+    
+    .main-nav {
+        display: none; /* In a real build, we'd add a hamburger menu toggle here */
+    }
+    
+    .section-padding {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+    }
+}
