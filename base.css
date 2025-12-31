@@ -1,0 +1,74 @@
+/* 
+    GROVER'S GYM - LUXURY BASE 
+    Design: Elite, Dominant, Power
+*/
+
+:root {
+    --jet-black: #050505;
+    --deep-charcoal: #121212;
+    --matte-gold: #C5A059;
+    --gold-hover: #E8C37D;
+    --subtle-neon: #00FFC3;
+    --white: #FFFFFF;
+    --gray-400: #A1A1AA;
+    --transition-smooth: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--jet-black);
+    color: var(--white);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Luxury Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--jet-black);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--matte-gold);
+}
+
+.section-padding {
+    padding: 120px 0;
+}
