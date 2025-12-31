@@ -1,0 +1,49 @@
+/* CINEMATIC ANIMATIONS */
+
+/* Text Reveal Animation */
+.reveal-text {
+    overflow: hidden;
+}
+
+.reveal-text span {
+    display: block;
+    transform: translateY(100%);
+    animation: revealUp 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+@keyframes revealUp {
+    to { transform: translateY(0); }
+}
+
+/* Gold Glow Pulse */
+.glow-on-hover:hover {
+    box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+}
+
+/* Magnetic Button Base */
+.btn-magnetic {
+    display: inline-block;
+    padding: 18px 45px;
+    background: var(--matte-gold);
+    color: var(--jet-black);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+}
+
+.btn-magnetic:hover {
+    background: var(--white);
+    transform: scale(1.05);
+}
+
+/* Parallax Placeholder */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
